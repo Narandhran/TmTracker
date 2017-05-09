@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table catalog="tm" name="tm_project_user" class="ProjectUser"></table>
+	<table catalog="tm" name="tm_role" class="Role"></table>
+	<table catalog="tm" name="tm_role_user" class="RoleUser"></table>
+	<table catalog="tm" name="tm_meeting" class="Meeting"></table>
+	<table catalog="tm" name="tm_attendance_user"
+		class="AttendanceUser">
+	</table>
+	<table catalog="tm" name="tm_project_type" class="ProjectType"></table>
+	<table catalog="tm" name="tm_role_type" class="RoleType"></table>
+	<table catalog="tm" name="tm_user" class="User"></table>
+	<table catalog="tm" name="tm_club" class="Club"></table>
+</hibernate-reverse-engineering>
