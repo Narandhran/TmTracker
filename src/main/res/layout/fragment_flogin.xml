@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="layout.FLogin"
+    android:background="#ff9999"
+    android:layout_alignParentBottom="false">
+
+    <include layout="@layout/footer"/>
+
+
+    
+    
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_login"
+        android:textStyle="bold"
+        android:text="@string/login"
+        android:textSize="30sp"
+        android:clickable="true"
+        android:fontFamily="cursive"
+        android:background="@drawable/rounded_btn"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_marginBottom="28dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_user_id"
+        android:inputType="phone"
+        android:background="@drawable/rounded_edt"
+        android:autoLink="phone"
+        android:textSize="26sp"
+        android:textStyle="normal|bold|italic"
+        android:layout_above="@+id/btn_login"
+        tools:ignore="LabelFor"
+        android:layout_alignStart="@+id/btn_login"
+        android:layout_width="150dp" />
+
+    <TextView
+        android:text="@string/member_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="36sp"
+        android:fontFamily="cursive"
+        android:layout_above="@+id/edt_user_id"
+        android:layout_alignEnd="@+id/edt_user_id"
+        android:layout_marginBottom="49dp" />
+
+    <EditText
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_country_code"
+        android:background="@drawable/country_code"
+        android:autoLink="phone"
+        android:textSize="26sp"
+        android:textStyle="normal|bold|italic"
+        tools:ignore="LabelFor"
+        android:layout_width="50dp"
+        android:layout_alignBaseline="@+id/edt_user_id"
+        android:layout_alignBottom="@+id/edt_user_id"
+        android:layout_toStartOf="@+id/edt_user_id"
+        android:inputType="text|number" />
+
+</RelativeLayout>

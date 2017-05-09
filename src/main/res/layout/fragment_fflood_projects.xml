@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9cc"
+    tools:context="layout.FFloodProjects">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/txt_flood_heading"
+        android:id="@+id/tbl_flood">
+
+        <TableRow android:layout_marginBottom="30dp">
+            <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_users_list"
+            android:text="User List"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spn_users"/>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="30dp">
+            <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_project_type"
+            android:text="Communication"/>
+
+            <!--<Spinner-->
+                <!--android:layout_width="80dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/spn_project_type_communication"/>-->
+            <RelativeLayout android:layout_height="wrap_content" android:layout_width="wrap_content">
+                <Spinner
+                    android:id="@+id/spn_project_type_communication"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <Spinner
+                    android:layout_toRightOf="@+id/spn_project_type_communication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spn_project_level_communication"/>
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="30dp">
+            <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_project_level"
+            android:text="LeaderShip"/>
+
+            <RelativeLayout android:layout_height="wrap_content" android:layout_width="wrap_content">
+            <Spinner
+                android:id="@+id/spn_project_type_leadership"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <Spinner
+                android:layout_toRightOf="@+id/spn_project_type_leadership"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spn_project_level_leadership"/>
+            </RelativeLayout>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_dummy_projects"
+        android:layout_below="@+id/tbl_flood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dummy Projects"
+
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_flood_heading"
+        android:text="Dummy Project Screen"
+        android:layout_alignParentTop="true"
+        android:textSize="0.15in"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

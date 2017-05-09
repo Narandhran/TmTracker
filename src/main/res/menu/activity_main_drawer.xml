@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_menu_login_user"
+            android:title="Login" />
+        <item
+            android:id="@+id/nav_project_list"
+            android:icon="@drawable/ic_menu_project_list"
+            android:title="Project List" />
+        <item
+            android:id="@+id/nav_club_member"
+            android:icon="@drawable/ic_menu_club_member"
+            android:title="Club Members" />
+        <item
+            android:id="@+id/nav_flood_projects"
+            android:title="Flood Projects" />
+
+        <item
+            android:id="@+id/nav_register_member"
+            android:title="Register Member"/>
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
