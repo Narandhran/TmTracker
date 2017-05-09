@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.FProjectList">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include layout="@layout/footer"
+        android:id="@+id/footer"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_welcomeName"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic"
+        android:fontFamily="sans-serif" />
+
+    <Button
+        android:text="@string/add_project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_welcomeName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/btn_add_project" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_add_project"
+        android:layout_above="@+id/footer">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_below="@+id/txt_details"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+           />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            android:layout_alignParentStart="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chart"
+            android:id="@+id/txt_communication_avg_msg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_leadership_avg_msg"
+            android:layout_below="@+id/txt_communication_avg_msg"/>
+        <TextView
+            android:layout_below="@+id/txt_leadership_avg_msg"
+            android:id="@+id/txt_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/details"/>
+    </RelativeLayout>
+
+</ScrollView>
+</RelativeLayout>
+

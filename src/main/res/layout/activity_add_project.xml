@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_project"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9cc"
+    tools:context="com.neemshade.tmtracker.AddProjectActivity">
+
+    <include layout="@layout/footer"
+        android:id="@+id/footer"/>
+
+    <ScrollView
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:weightSum="1">
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/edt_prjt_title"
+                android:hint="Project Title"
+                android:textSize="20dp"
+                android:layout_weight="1"/>
+        </TableRow>
+
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:weightSum="1">
+                <EditText  android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:id="@+id/edt_prjt_theme"
+                    android:hint="Project Theme"
+                    android:layout_weight="1"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:weightSum="1">
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:id="@+id/edt_prjt_cmt"
+                    android:inputType="textMultiLine"
+                    android:hint="Project Comments"
+                    android:layout_weight="1"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:weightSum="4">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Category"
+                android:textSize="20dp"
+                android:layout_weight="2"/>
+
+            <Spinner android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"
+                android:id="@+id/spn_prjt_type"
+               android:popupBackground="#fcc600"> </Spinner>
+            <Spinner android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"
+                android:id="@+id/spn_prjt_lvl"> </Spinner>
+        </TableRow>
+
+
+
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:weightSum="5">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="20dp"
+                android:layout_weight="1"/>
+
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="4"
+                android:id="@+id/edt_prjt_date"
+                android:inputType="date"/>
+        </TableRow>
+
+
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:weightSum="5">
+                <TextView android:layout_height="match_parent" android:layout_width="match_parent"
+                    android:text="@string/new_project"
+                    android:id="@+id/txt_repeat"
+                    android:textSize="20dp"
+                    android:layout_weight="1"/>
+
+                <Switch android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:id="@+id/switch_prjt_repeat"
+                    android:layout_weight="3"
+                    android:splitTrack="false"
+                    android:allowUndo="false" />
+         </TableRow>
+
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:weightSum="1">
+            <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/btn_send_to_rest"
+                android:text="Add Project"
+                android:background="@drawable/add_project_btn"
+
+                android:textColor="#4520ff"
+                android:textSize="25dp"
+                android:clickable="true"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:elevation="0dp" />
+        </TableRow>
+        </TableLayout>
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_send_to_rest"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Add Project"/>-->
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:id="@+id/activity_add_project"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--tools:context="com.neemshade.tmtracker.AddProjectActivity">-->
+
+
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/scrollView"-->
+        <!--android:paddingBottom="30dp"-->
+        <!--android:paddingTop="20dp">-->
+
+
+
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:id="@+id/scrollableContents"-->
+
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+
+
+    <!--<TableLayout-->
+        <!--android:stretchColumns="*"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TableRow android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:paddingBottom="30dp">-->
+
+            <!--<TextView-->
+                <!--android:text="Project Title"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/txt_project_title"-->
+                <!--android:paddingTop="10dp" />-->
+
+            <!--<LinearLayout android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:inputType="textPersonName"-->
+                <!--android:id="@+id/edt_prjt_title"-->
+                <!--android:hint="Title"/>-->
+            <!--</LinearLayout>-->
+        <!--</TableRow>-->
+        <!--<TableRow android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:paddingBottom="30dp">-->
+
+            <!--<TextView-->
+                <!--android:text="Category"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/txt_project_type"-->
+                <!--android:paddingBottom="30dp" />-->
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+                <!--<Spinner-->
+                    <!--android:popupBackground="@android:color/holo_orange_light"-->
+                    <!--android:background="@android:color/holo_orange_light"-->
+                    <!--android:id="@+id/spn_prjt_type"-->
+                    <!--style="@android:style/Widget.Spinner.DropDown"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_marginRight="20dp"/>-->
+                <!--<Spinner-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:popupBackground="@android:color/holo_orange_light"-->
+                    <!--android:background="@android:color/holo_orange_light"-->
+                    <!--android:id="@+id/spn_prjt_lvl"-->
+                    <!--style="@android:style/Widget.Spinner.DropDown"-->
+                    <!--android:layout_height="match_parent" />-->
+            <!--</LinearLayout>-->
+
+        <!--</TableRow>-->
+
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:paddingBottom="30dp">-->
+
+            <!--<TextView-->
+                <!--android:text="Project Theme"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/txt_project_theme"-->
+                <!--android:textAlignment="viewStart"-->
+                <!--android:paddingTop="10dp" />-->
+
+            <!--<LinearLayout android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+                <!--<EditText-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:inputType="textPersonName"-->
+                    <!--android:id="@+id/edt_prjt_theme"-->
+                    <!--android:hint="Theme"/>-->
+            <!--</LinearLayout>-->
+        <!--</TableRow>-->
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingBottom="30dp">-->
+            <!--<TextView-->
+                <!--android:text="Date"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/txt_project_date"-->
+                <!--android:textAlignment="viewStart"-->
+                <!--android:paddingTop="10dp" />-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+                <!--<EditText-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:inputType="date"-->
+                    <!--android:id="@+id/edt_prjt_date"/>-->
+            <!--</LinearLayout>-->
+
+        <!--</TableRow>-->
+
+        <!--<TableRow android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingBottom="30dp">-->
+
+            <!--<TextView-->
+                <!--android:text="Comments"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/txt_project_comment"-->
+                <!--android:textAlignment="viewStart"-->
+                <!--android:paddingTop="10dp" />-->
+
+            <!--<RelativeLayout android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+                <!--<EditText-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:inputType="textMultiLine"-->
+                    <!--android:id="@+id/edt_prjt_cmt"-->
+                    <!--android:hint="Comments"-->
+                    <!--android:layout_width="match_parent" />-->
+            <!--</RelativeLayout>-->
+        <!--</TableRow>-->
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+                <!--android:text="@string/new_project"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/txt_repeat"-->
+                <!--android:paddingTop="10dp" />-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<Switch-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/switch_prjt_repeat"-->
+                    <!--android:splitTrack="false"-->
+                    <!--android:switchTextAppearance="@style/TextAppearance.AppCompat"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:allowUndo="false" />-->
+                <!--<Button-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Add"-->
+                    <!--android:id="@+id/btn_send_to_rest"/>-->
+            <!--</LinearLayout>-->
+        <!--</TableRow>-->
+    <!--</TableLayout>-->
+    <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+<!--</RelativeLayout>-->
+
+

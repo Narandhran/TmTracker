@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9cc"
+    tools:context="layout.FClubMember">
+
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spn_club_list"
+        android:layout_marginStart="41dp"
+        android:layout_alignTop="@+id/btn_add_project"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <include layout="@layout/footer"
+        android:id="@+id/footer"/>
+
+    <ListView
+        android:layout_above="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/spn_club_list"
+        android:layout_alignParentStart="true"
+        android:id="@+id/list_member_list" />
+
+</RelativeLayout>
